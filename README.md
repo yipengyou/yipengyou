@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Anson
 - 👀 I’m interested in data visualization/processing, and I want to simplify the tasks in my everyday life
-- 🌱 I’m currently learning SQL and its dialects. Some specific python libraries and web development basics
+- 🌱 I’m currently learning SQL and its dialects. Some specific python libraries and full stack application development
 - 💞️ I’m looking to collaborate on Biology projects that need bioinformatic/data anaysis and visualization
 - 📫 How to reach me 990722ansonchang@gmail.com
 
