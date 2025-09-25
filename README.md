@@ -1,33 +1,31 @@
-# Astro Starter Kit: Basics
+# Personal Website
 
-```sh
-npm create astro@latest -- --template basics
-```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- 👋 Hi, I'm Anson
+- Previous Amazon full stack developer under AWS working in supply chain management space creating microservices
+- 👀 I'm interested in data visualization/processing and scripting, I want to simplify the tasks in my everyday life
+- 💞️ I'm looking to collaborate on Biology projects that tackles bioinformatic/data anaysis and visualization
+- Currently working on a project that takes advantage of deep learning and neural networks to differentiate on a large scale the anti microbial properties of peptides
+- 📫 Reach me at 990722ansonchang@gmail.com
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+This is an Astro-based personal website with the following structure:
 
 ```text
 /
 ├── public/
 │   └── favicon.svg
 ├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
+│   ├── assets
+│   │   └── astro.svg
+│   ├── components
+│   │   └── Welcome.astro
+│   ├── layouts
+│   │   └── Layout.astro
+│   └── pages
+│       └── index.astro
 └── package.json
 ```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
@@ -43,4 +41,4 @@ All commands are run from the root of the project, from a terminal:
 
 ## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Feel free to check [Astro documentation](https://docs.astro.build) or jump into the [Discord server](https://astro.build/chat).
