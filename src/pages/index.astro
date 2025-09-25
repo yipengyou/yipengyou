@@ -1,11 +1,190 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<main class="home-container">
+		<section class="hero">
+			<h1>Welcome to My Personal Website</h1>
+			<p class="hero-subtitle">I'm passionate about technology, learning, and sharing knowledge</p>
+			<div class="hero-actions">
+				<a href="/about" class="btn btn-primary">Learn About Me</a>
+				<a href="/blog" class="btn btn-secondary">Read My Blog</a>
+			</div>
+		</section>
+
+		<section class="features">
+			<div class="feature-grid">
+				<div class="feature-card">
+					<h3>About Me</h3>
+					<p>Discover my background, interests, and professional journey.</p>
+					<a href="/about" class="feature-link">Learn More →</a>
+				</div>
+				<div class="feature-card">
+					<h3>Blog Posts</h3>
+					<p>Read my thoughts on technology, development, and life.</p>
+					<a href="/blog" class="feature-link">Read Posts →</a>
+				</div>
+				<div class="feature-card">
+					<h3>Projects</h3>
+					<p>Explore the projects I'm working on and have completed.</p>
+					<a href="/about#projects" class="feature-link">View Projects →</a>
+				</div>
+			</div>
+		</section>
+	</main>
 </Layout>
+
+<style>
+	.home-container {
+		min-height: calc(100vh - 80px);
+		padding: 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.hero {
+		text-align: center;
+		padding: 4rem 0;
+		background: linear-gradient(135deg, rgba(50, 69, 255, 0.1) 0%, rgba(188, 82, 238, 0.1) 100%);
+		border-radius: 20px;
+		margin-bottom: 4rem;
+	}
+
+	.hero h1 {
+		font-size: 3rem;
+		font-weight: bold;
+		margin-bottom: 1rem;
+		background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.hero-subtitle {
+		font-size: 1.25rem;
+		color: #4b5563;
+		margin-bottom: 2rem;
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.hero-actions {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.btn {
+		padding: 12px 24px;
+		border-radius: 10px;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.2s ease;
+		display: inline-block;
+	}
+
+	.btn-primary {
+		background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
+		color: white;
+		box-shadow: 0 4px 15px rgba(50, 69, 255, 0.3);
+	}
+
+	.btn-primary:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 6px 20px rgba(50, 69, 255, 0.4);
+	}
+
+	.btn-secondary {
+		background: rgba(255, 255, 255, 0.9);
+		color: #111827;
+		border: 2px solid rgba(50, 69, 255, 0.2);
+	}
+
+	.btn-secondary:hover {
+		background: rgba(255, 255, 255, 1);
+		border-color: rgba(50, 69, 255, 0.4);
+		transform: translateY(-2px);
+	}
+
+	.features {
+		margin-top: 4rem;
+	}
+
+	.feature-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	.feature-card {
+		background: rgba(255, 255, 255, 0.8);
+		padding: 2rem;
+		border-radius: 16px;
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		backdrop-filter: blur(10px);
+		transition: transform 0.2s ease, box-shadow 0.2s ease;
+	}
+
+	.feature-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	}
+
+	.feature-card h3 {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+		color: #111827;
+	}
+
+	.feature-card p {
+		color: #4b5563;
+		margin-bottom: 1.5rem;
+		line-height: 1.6;
+	}
+
+	.feature-link {
+		color: #3245ff;
+		text-decoration: none;
+		font-weight: 600;
+		transition: color 0.2s ease;
+	}
+
+	.feature-link:hover {
+		color: #bc52ee;
+	}
+
+	@media (max-width: 768px) {
+		.home-container {
+			padding: 1rem;
+		}
+
+		.hero {
+			padding: 2rem 1rem;
+		}
+
+		.hero h1 {
+			font-size: 2rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1rem;
+		}
+
+		.hero-actions {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.btn {
+			width: 200px;
+			text-align: center;
+		}
+
+		.feature-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

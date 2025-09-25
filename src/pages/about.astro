@@ -1,0 +1,393 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+	<main class="about-container">
+		<section class="about-hero">
+			<h1>About Me</h1>
+			<p class="about-subtitle">Get to know me better</p>
+		</section>
+
+		<section class="about-content">
+			<div class="about-grid">
+				<div class="about-text">
+					<h2>Hello, I'm a Developer</h2>
+					<p>
+						I'm passionate about creating innovative solutions and learning new technologies. 
+						With a background in software development, I enjoy building web applications, 
+						exploring new frameworks, and sharing knowledge with the community.
+					</p>
+					<p>
+						When I'm not coding, you can find me reading about the latest tech trends, 
+						contributing to open source projects, or exploring new programming languages 
+						and frameworks.
+					</p>
+					
+					<h3>Skills & Technologies</h3>
+					<div class="skills-grid">
+						<div class="skill-category">
+							<h4>Frontend</h4>
+							<div class="skill-tags">
+								<span class="skill-tag">JavaScript</span>
+								<span class="skill-tag">TypeScript</span>
+								<span class="skill-tag">React</span>
+								<span class="skill-tag">Vue.js</span>
+								<span class="skill-tag">Astro</span>
+								<span class="skill-tag">CSS</span>
+							</div>
+						</div>
+						<div class="skill-category">
+							<h4>Backend</h4>
+							<div class="skill-tags">
+								<span class="skill-tag">Node.js</span>
+								<span class="skill-tag">Python</span>
+								<span class="skill-tag">Express</span>
+								<span class="skill-tag">FastAPI</span>
+								<span class="skill-tag">PostgreSQL</span>
+								<span class="skill-tag">MongoDB</span>
+							</div>
+						</div>
+						<div class="skill-category">
+							<h4>Tools & Others</h4>
+							<div class="skill-tags">
+								<span class="skill-tag">Git</span>
+								<span class="skill-tag">Docker</span>
+								<span class="skill-tag">AWS</span>
+								<span class="skill-tag">Linux</span>
+								<span class="skill-tag">CI/CD</span>
+								<span class="skill-tag">Testing</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="about-sidebar">
+					<div class="info-card">
+						<h3>Contact Information</h3>
+						<div class="contact-info">
+							<p><strong>Email:</strong> your.email@example.com</p>
+							<p><strong>Location:</strong> Your City, Country</p>
+							<p><strong>Available for:</strong> Freelance work</p>
+						</div>
+						<div class="social-links">
+							<a href="#" class="social-link">GitHub</a>
+							<a href="#" class="social-link">LinkedIn</a>
+							<a href="#" class="social-link">Twitter</a>
+						</div>
+					</div>
+
+					<div class="info-card">
+						<h3>Current Focus</h3>
+						<ul class="focus-list">
+							<li>Learning new web technologies</li>
+							<li>Building personal projects</li>
+							<li>Contributing to open source</li>
+							<li>Writing technical blog posts</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="projects" class="projects-section">
+			<h2>Featured Projects</h2>
+			<div class="projects-grid">
+				<div class="project-card">
+					<h3>Project Alpha</h3>
+					<p>A modern web application built with React and Node.js, featuring real-time collaboration and advanced data visualization.</p>
+					<div class="project-tech">
+						<span class="tech-tag">React</span>
+						<span class="tech-tag">Node.js</span>
+						<span class="tech-tag">MongoDB</span>
+					</div>
+					<div class="project-links">
+						<a href="#" class="project-link">Live Demo</a>
+						<a href="#" class="project-link">Source Code</a>
+					</div>
+				</div>
+				<div class="project-card">
+					<h3>Project Beta</h3>
+					<p>An API service built with Python and FastAPI, providing efficient data processing and machine learning capabilities.</p>
+					<div class="project-tech">
+						<span class="tech-tag">Python</span>
+						<span class="tech-tag">FastAPI</span>
+						<span class="tech-tag">PostgreSQL</span>
+					</div>
+					<div class="project-links">
+						<a href="#" class="project-link">Documentation</a>
+						<a href="#" class="project-link">Source Code</a>
+					</div>
+				</div>
+				<div class="project-card">
+					<h3>Project Gamma</h3>
+					<p>A mobile-responsive website built with Astro, featuring modern design and optimal performance.</p>
+					<div class="project-tech">
+						<span class="tech-tag">Astro</span>
+						<span class="tech-tag">TypeScript</span>
+						<span class="tech-tag">CSS</span>
+					</div>
+					<div class="project-links">
+						<a href="#" class="project-link">Live Site</a>
+						<a href="#" class="project-link">Source Code</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	.about-container {
+		min-height: calc(100vh - 80px);
+		padding: 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.about-hero {
+		text-align: center;
+		padding: 3rem 0;
+		margin-bottom: 3rem;
+	}
+
+	.about-hero h1 {
+		font-size: 2.5rem;
+		font-weight: bold;
+		margin-bottom: 1rem;
+		background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.about-subtitle {
+		font-size: 1.25rem;
+		color: #4b5563;
+	}
+
+	.about-content {
+		margin-bottom: 4rem;
+	}
+
+	.about-grid {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		gap: 3rem;
+		align-items: start;
+	}
+
+	.about-text h2 {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+		color: #111827;
+	}
+
+	.about-text p {
+		color: #4b5563;
+		line-height: 1.7;
+		margin-bottom: 1.5rem;
+		font-size: 1.1rem;
+	}
+
+	.about-text h3 {
+		font-size: 1.5rem;
+		margin: 2rem 0 1rem;
+		color: #111827;
+	}
+
+	.skills-grid {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.skill-category h4 {
+		font-size: 1.2rem;
+		margin-bottom: 0.5rem;
+		color: #111827;
+	}
+
+	.skill-tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+
+	.skill-tag {
+		background: rgba(50, 69, 255, 0.1);
+		color: #3245ff;
+		padding: 0.5rem 1rem;
+		border-radius: 20px;
+		font-size: 0.9rem;
+		font-weight: 500;
+	}
+
+	.about-sidebar {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.info-card {
+		background: rgba(255, 255, 255, 0.8);
+		padding: 2rem;
+		border-radius: 16px;
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		backdrop-filter: blur(10px);
+	}
+
+	.info-card h3 {
+		font-size: 1.3rem;
+		margin-bottom: 1rem;
+		color: #111827;
+	}
+
+	.contact-info p {
+		margin-bottom: 0.5rem;
+		color: #4b5563;
+	}
+
+	.social-links {
+		display: flex;
+		gap: 1rem;
+		margin-top: 1rem;
+	}
+
+	.social-link {
+		color: #3245ff;
+		text-decoration: none;
+		font-weight: 500;
+		transition: color 0.2s ease;
+	}
+
+	.social-link:hover {
+		color: #bc52ee;
+	}
+
+	.focus-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.focus-list li {
+		color: #4b5563;
+		margin-bottom: 0.5rem;
+		padding-left: 1rem;
+		position: relative;
+	}
+
+	.focus-list li::before {
+		content: '•';
+		color: #3245ff;
+		font-weight: bold;
+		position: absolute;
+		left: 0;
+	}
+
+	.projects-section {
+		margin-top: 4rem;
+		padding-top: 3rem;
+		border-top: 1px solid rgba(255, 255, 255, 0.2);
+	}
+
+	.projects-section h2 {
+		font-size: 2rem;
+		text-align: center;
+		margin-bottom: 2rem;
+		color: #111827;
+	}
+
+	.projects-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	.project-card {
+		background: rgba(255, 255, 255, 0.8);
+		padding: 2rem;
+		border-radius: 16px;
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		backdrop-filter: blur(10px);
+		transition: transform 0.2s ease, box-shadow 0.2s ease;
+	}
+
+	.project-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	}
+
+	.project-card h3 {
+		font-size: 1.3rem;
+		margin-bottom: 1rem;
+		color: #111827;
+	}
+
+	.project-card p {
+		color: #4b5563;
+		line-height: 1.6;
+		margin-bottom: 1.5rem;
+	}
+
+	.project-tech {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.tech-tag {
+		background: rgba(188, 82, 238, 0.1);
+		color: #bc52ee;
+		padding: 0.3rem 0.8rem;
+		border-radius: 15px;
+		font-size: 0.8rem;
+		font-weight: 500;
+	}
+
+	.project-links {
+		display: flex;
+		gap: 1rem;
+	}
+
+	.project-link {
+		color: #3245ff;
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 0.9rem;
+		transition: color 0.2s ease;
+	}
+
+	.project-link:hover {
+		color: #bc52ee;
+	}
+
+	@media (max-width: 768px) {
+		.about-container {
+			padding: 1rem;
+		}
+
+		.about-grid {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+
+		.about-hero h1 {
+			font-size: 2rem;
+		}
+
+		.about-text h2 {
+			font-size: 1.5rem;
+		}
+
+		.projects-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.social-links {
+			flex-direction: column;
+		}
+	}
+</style>
