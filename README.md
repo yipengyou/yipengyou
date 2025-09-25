@@ -1,9 +1,10 @@
 # Personal Website
 
 - 👋 Hi, I'm Anson
-- Previous Amazon SDE under AWS and Devices orgs working in supply chain management software
-- 👀 I'm interested in data visualization/processing, and I want to simplify the tasks in my everyday life
-- 💞️ I'm looking to collaborate on Biology projects that need bioinformatic/data anaysis and visualization
+- Previous Amazon full stack developer under AWS working in supply chain management space creating microservices
+- 👀 I'm interested in data visualization/processing and scripting, I want to simplify the tasks in my everyday life
+- 💞️ I'm looking to collaborate on Biology projects that tackles bioinformatic/data anaysis and visualization
+- Currently working on a project that takes advantage of deep learning and neural networks to differentiate on a large scale the anti microbial properties of peptides
 - 📫 Reach me at 990722ansonchang@gmail.com
 
 ## 🚀 Project Structure
